@@ -12,6 +12,21 @@ public class Library {
     }
 
     public String printBooksContaining(String partialBookTitle) {
-        return null;
+
+        printStream.println(partialBookTitle + " - ");
+
+        for(String title: books)
+        {
+            if(title.contains(partialBookTitle))
+            {
+                printStream.println(title);
+            }
+        }
+
+        //Create an extra blank line at the end for readability.
+        printStream.println("");
+
+        //I'm not sure what string was intended to be returned, it does not say in the prompt
+        return partialBookTitle;
     }
 }

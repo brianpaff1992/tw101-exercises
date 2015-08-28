@@ -10,6 +10,7 @@ public class Main {
         for(int i =1; i<=100; i++)
         {
             if(i%2 != 0) {
+                //i is odd, add it to the result and print it out
                 System.out.println(i);
                 result = result + i;
             }
