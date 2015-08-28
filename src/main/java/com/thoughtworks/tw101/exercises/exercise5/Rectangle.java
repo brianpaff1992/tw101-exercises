@@ -10,6 +10,8 @@ public class Rectangle {
     }
 
     public int area(){
-        return -1;
+
+        //area of rectangle = length x height
+        return length * width;
     }
 }
