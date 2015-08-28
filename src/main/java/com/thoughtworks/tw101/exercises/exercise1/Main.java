@@ -5,5 +5,17 @@ package com.thoughtworks.tw101.exercises.exercise1;
 public class Main {
     public static void main(String[] args) {
 
+        int result = 0;
+
+        for(int i =1; i<=100; i++)
+        {
+            if(i%2 != 0) {
+                System.out.println(i);
+                result = result + i;
+            }
+        }
+
+        System.out.println("Sum of the numbers from 0 - 100: " + result);
+
     }
 }
