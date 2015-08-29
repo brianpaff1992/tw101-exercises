@@ -1,6 +1,5 @@
-package com.thoughtworks.tw101.exercises.exercise7;
+package com.thoughtworks.tw101.exercises.exercise8;
 
-import java.awt.*;
 import java.util.Random;
 
 /**
@@ -15,6 +14,7 @@ public class RandomNumber {
         int lowerBound = 1;
         Random randomNumber = new Random();
         number = randomNumber.nextInt(upperBound - lowerBound + 1) + lowerBound;
+        System.out.println(number);
     }
 
     public int compareGuess(int guessedNumber)

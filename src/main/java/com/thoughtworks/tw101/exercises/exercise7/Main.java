@@ -16,7 +16,6 @@ public class Main {
 
 
         do {
-                System.out.println("in try");
                 System.out.print("Guess a number between 1 and 100: ");
                 userGuess = input.readNext();
                 if (number.compareGuess(userGuess) == 2)
