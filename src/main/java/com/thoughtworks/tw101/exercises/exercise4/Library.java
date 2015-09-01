@@ -24,9 +24,13 @@ public class Library {
         }
 
         //Create an extra blank line at the end for readability.
-        printStream.println("");
+        printBlankLine();
 
         //I'm not sure what string was intended to be returned, it does not say in the prompt
         return partialBookTitle;
+    }
+
+    private void printBlankLine() {
+        printStream.println("");
     }
 }

@@ -6,15 +6,22 @@ public class RectangleAverager {
         int totalArea = 0;
         float average;
 
-        //Get the total area first
+        totalArea = getTotalArea(rectangles, totalArea);
+
+        average = getaAverage(rectangles, totalArea);
+        return average;
+    }
+
+    private float getaAverage(Rectangle[] rectangles, float totalArea) {
+        return totalArea / rectangles.length;
+    }
+
+    private int getTotalArea(Rectangle[] rectangles, int totalArea) {
         for (Rectangle r: rectangles)
         {
             int areaOfRectangle = r.area();
             totalArea = totalArea + areaOfRectangle;
         }
-
-        //Get the average by dividing the total area by the amount of rectangles
-        average = (float) totalArea / rectangles.length;
-        return average;
+        return totalArea;
     }
 }

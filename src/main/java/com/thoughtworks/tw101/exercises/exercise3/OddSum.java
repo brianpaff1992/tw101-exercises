@@ -12,14 +12,24 @@ public class OddSum {
         else {
             int result = 0;
 
-            for (int i = start; i<= end; i++)
-            {
-                if(i%2 != 0) {
-                    //i is odd, add it to the result
-                    result = result + i;
-                }
-            }
+            result = getTotalFromStartNumberToEndNumber(start, end, result);
             return result;
         }
+    }
+
+    private int getTotalFromStartNumberToEndNumber(int start, int end, int result) {
+        for (int i = start; i<= end; i++)
+        {
+            result = addToResultIfOdd(result, i);
+        }
+        return result;
+    }
+
+    private int addToResultIfOdd(int result, int i) {
+        if(i%2 != 0) {
+            //i is odd, add it to the result
+            result = result + i;
+        }
+        return result;
     }
 }

@@ -6,11 +6,13 @@ public class Accumulator {
 
     public Accumulator()
     {
+
         numberOfTimesCalled = 0;
     }
 
     public void increment()
     {
+
         numberOfTimesCalled++;
     }
 
